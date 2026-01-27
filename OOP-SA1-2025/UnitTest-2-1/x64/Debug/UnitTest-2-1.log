@@ -1,0 +1,85 @@
+﻿  pch.cpp
+  UnitTest-2-1.cpp
+C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(117,44): error C2535: 'std::map<double,long double,std::less<double>,std::allocator<std::pair<const double,long double>>> Statistics::subTotals(const std::vector<double,std::allocator<double>> &)': member function already defined or declared
+  (compiling source file '/UnitTest-2-1.cpp')
+      C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(44,32):
+      see declaration of 'Statistics::subTotals'
+  
+C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(125,44): error C2535: 'std::map<double,long double,std::less<double>,std::allocator<std::pair<const double,long double>>> Statistics::frequency(const std::vector<double,std::allocator<double>> &)': member function already defined or declared
+  (compiling source file '/UnitTest-2-1.cpp')
+      C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(47,32):
+      see declaration of 'Statistics::frequency'
+  
+C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(133,1): error C2059: syntax error: '}'
+  (compiling source file '/UnitTest-2-1.cpp')
+  
+C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(133,1): error C2143: syntax error: missing ';' before '}'
+  (compiling source file '/UnitTest-2-1.cpp')
+  
+C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-1\UnitTest-2-1.cpp(41,4): error C2679: binary '=': no operator found which takes a right-hand operand of type 'std::map<double,long double,std::less<double>,std::allocator<std::pair<const double,long double>>>' (or there is no acceptable conversion)
+  (compiling source file '/UnitTest-2-1.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\map(339,10):
+      could be 'std::map<double,long,std::less<double>,std::allocator<std::pair<const double,long>>> &std::map<double,long,std::less<double>,std::allocator<std::pair<const double,long>>>::operator =(std::initializer_list<std::pair<const double,long>>)'
+          C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-1\UnitTest-2-1.cpp(41,4):
+          'std::map<double,long,std::less<double>,std::allocator<std::pair<const double,long>>> &std::map<double,long,std::less<double>,std::allocator<std::pair<const double,long>>>::operator =(std::initializer_list<std::pair<const double,long>>)': cannot convert argument 2 from 'std::map<double,long double,std::less<double>,std::allocator<std::pair<const double,long double>>>' to 'std::initializer_list<std::pair<const double,long>>'
+              C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-1\UnitTest-2-1.cpp(41,22):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\map(169,10):
+      or       'std::map<double,long,std::less<double>,std::allocator<std::pair<const double,long>>> &std::map<double,long,std::less<double>,std::allocator<std::pair<const double,long>>>::operator =(std::map<double,long,std::less<double>,std::allocator<std::pair<const double,long>>> &&) noexcept(<expr>)'
+          C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-1\UnitTest-2-1.cpp(41,4):
+          'std::map<double,long,std::less<double>,std::allocator<std::pair<const double,long>>> &std::map<double,long,std::less<double>,std::allocator<std::pair<const double,long>>>::operator =(std::map<double,long,std::less<double>,std::allocator<std::pair<const double,long>>> &&) noexcept(<expr>)': cannot convert argument 2 from 'std::map<double,long double,std::less<double>,std::allocator<std::pair<const double,long double>>>' to 'std::map<double,long,std::less<double>,std::allocator<std::pair<const double,long>>> &&'
+              C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-1\UnitTest-2-1.cpp(41,22):
+              Reason: cannot convert from 'std::map<double,long double,std::less<double>,std::allocator<std::pair<const double,long double>>>' to 'std::map<double,long,std::less<double>,std::allocator<std::pair<const double,long>>>'
+              C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-1\UnitTest-2-1.cpp(41,22):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\map(160,10):
+      or       'std::map<double,long,std::less<double>,std::allocator<std::pair<const double,long>>> &std::map<double,long,std::less<double>,std::allocator<std::pair<const double,long>>>::operator =(const std::map<double,long,std::less<double>,std::allocator<std::pair<const double,long>>> &)'
+          C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-1\UnitTest-2-1.cpp(41,4):
+          'std::map<double,long,std::less<double>,std::allocator<std::pair<const double,long>>> &std::map<double,long,std::less<double>,std::allocator<std::pair<const double,long>>>::operator =(const std::map<double,long,std::less<double>,std::allocator<std::pair<const double,long>>> &)': cannot convert argument 2 from 'std::map<double,long double,std::less<double>,std::allocator<std::pair<const double,long double>>>' to 'const std::map<double,long,std::less<double>,std::allocator<std::pair<const double,long>>> &'
+              C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-1\UnitTest-2-1.cpp(41,22):
+              Reason: cannot convert from 'std::map<double,long double,std::less<double>,std::allocator<std::pair<const double,long double>>>' to 'const std::map<double,long,std::less<double>,std::allocator<std::pair<const double,long>>>'
+              C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-1\UnitTest-2-1.cpp(41,22):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-1\UnitTest-2-1.cpp(41,4):
+      while trying to match the argument list '(std::map<double,long,std::less<double>,std::allocator<std::pair<const double,long>>>, std::map<double,long double,std::less<double>,std::allocator<std::pair<const double,long double>>>)'
+  
+C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-1\UnitTest-2-1.cpp(61,4): error C2679: binary '=': no operator found which takes a right-hand operand of type 'std::map<double,long double,std::less<double>,std::allocator<std::pair<const double,long double>>>' (or there is no acceptable conversion)
+  (compiling source file '/UnitTest-2-1.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vector(1497,26):
+      could be 'std::vector<double,std::allocator<double>> &std::vector<double,std::allocator<double>>::operator =(std::initializer_list<_Ty>)'
+          with
+          [
+              _Ty=double
+          ]
+          C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-1\UnitTest-2-1.cpp(61,4):
+          'std::vector<double,std::allocator<double>> &std::vector<double,std::allocator<double>>::operator =(std::initializer_list<_Ty>)': cannot convert argument 2 from 'std::map<double,long double,std::less<double>,std::allocator<std::pair<const double,long double>>>' to 'std::initializer_list<_Ty>'
+          with
+          [
+              _Ty=double
+          ]
+              C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-1\UnitTest-2-1.cpp(61,23):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vector(1476,26):
+      or       'std::vector<double,std::allocator<double>> &std::vector<double,std::allocator<double>>::operator =(const std::vector<double,std::allocator<double>> &)'
+          C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-1\UnitTest-2-1.cpp(61,4):
+          'std::vector<double,std::allocator<double>> &std::vector<double,std::allocator<double>>::operator =(const std::vector<double,std::allocator<double>> &)': cannot convert argument 2 from 'std::map<double,long double,std::less<double>,std::allocator<std::pair<const double,long double>>>' to 'const std::vector<double,std::allocator<double>> &'
+              C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-1\UnitTest-2-1.cpp(61,23):
+              Reason: cannot convert from 'std::map<double,long double,std::less<double>,std::allocator<std::pair<const double,long double>>>' to 'const std::vector<double,std::allocator<double>>'
+              C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-1\UnitTest-2-1.cpp(61,23):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vector(729,26):
+      or       'std::vector<double,std::allocator<double>> &std::vector<double,std::allocator<double>>::operator =(std::vector<double,std::allocator<double>> &&) noexcept(<expr>)'
+          C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-1\UnitTest-2-1.cpp(61,4):
+          'std::vector<double,std::allocator<double>> &std::vector<double,std::allocator<double>>::operator =(std::vector<double,std::allocator<double>> &&) noexcept(<expr>)': cannot convert argument 2 from 'std::map<double,long double,std::less<double>,std::allocator<std::pair<const double,long double>>>' to 'std::vector<double,std::allocator<double>> &&'
+              C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-1\UnitTest-2-1.cpp(61,23):
+              Reason: cannot convert from 'std::map<double,long double,std::less<double>,std::allocator<std::pair<const double,long double>>>' to 'std::vector<double,std::allocator<double>>'
+              C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-1\UnitTest-2-1.cpp(61,23):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-1\UnitTest-2-1.cpp(61,4):
+      while trying to match the argument list '(std::vector<double,std::allocator<double>>, std::map<double,long double,std::less<double>,std::allocator<std::pair<const double,long double>>>)'
+  
+C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-1\UnitTest-2-1.cpp(70,18): error C2440: 'initializing': cannot convert from 'std::map<double,long double,std::less<double>,std::allocator<std::pair<const double,long double>>>' to 'double'
+  (compiling source file '/UnitTest-2-1.cpp')
+      C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-1\UnitTest-2-1.cpp(70,18):
+      No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+  

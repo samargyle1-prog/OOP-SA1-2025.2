@@ -1,0 +1,18 @@
+﻿  pch.cpp
+  UnitTest-3rd.cpp
+C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(117,44): error C2535: 'std::map<double,long double,std::less<double>,std::allocator<std::pair<const double,long double>>> Statistics::subTotals(const std::vector<double,std::allocator<double>> &)': member function already defined or declared
+  (compiling source file '/UnitTest-3rd.cpp')
+      C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(44,32):
+      see declaration of 'Statistics::subTotals'
+  
+C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(125,44): error C2535: 'std::map<double,long double,std::less<double>,std::allocator<std::pair<const double,long double>>> Statistics::frequency(const std::vector<double,std::allocator<double>> &)': member function already defined or declared
+  (compiling source file '/UnitTest-3rd.cpp')
+      C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(47,32):
+      see declaration of 'Statistics::frequency'
+  
+C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(133,1): error C2059: syntax error: '}'
+  (compiling source file '/UnitTest-3rd.cpp')
+  
+C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(133,1): error C2143: syntax error: missing ';' before '}'
+  (compiling source file '/UnitTest-3rd.cpp')
+  

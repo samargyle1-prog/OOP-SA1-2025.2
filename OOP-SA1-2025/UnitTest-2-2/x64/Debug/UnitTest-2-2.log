@@ -1,0 +1,73 @@
+﻿  pch.cpp
+  UnitTest-2-2.cpp
+C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(117,44): error C2535: 'std::map<double,long double,std::less<double>,std::allocator<std::pair<const double,long double>>> Statistics::subTotals(const std::vector<double,std::allocator<double>> &)': member function already defined or declared
+  (compiling source file '/UnitTest-2-2.cpp')
+      C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(44,32):
+      see declaration of 'Statistics::subTotals'
+  
+C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(125,44): error C2535: 'std::map<double,long double,std::less<double>,std::allocator<std::pair<const double,long double>>> Statistics::frequency(const std::vector<double,std::allocator<double>> &)': member function already defined or declared
+  (compiling source file '/UnitTest-2-2.cpp')
+      C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(47,32):
+      see declaration of 'Statistics::frequency'
+  
+C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(133,1): error C2059: syntax error: '}'
+  (compiling source file '/UnitTest-2-2.cpp')
+  
+C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(133,1): error C2143: syntax error: missing ';' before '}'
+  (compiling source file '/UnitTest-2-2.cpp')
+  
+C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-2\UnitTest-2-2.cpp(20,33): error C2039: 'standardDeviation': is not a member of 'Statistics'
+  (compiling source file '/UnitTest-2-2.cpp')
+      C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(10,7):
+      see declaration of 'Statistics'
+  
+C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-2\UnitTest-2-2.cpp(27,27): error C2039: 'stripOutliers': is not a member of 'Statistics'
+  (compiling source file '/UnitTest-2-2.cpp')
+      C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(10,7):
+      see declaration of 'Statistics'
+  
+C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-2\UnitTest-2-2.cpp(43,6): error C2039: 'uniqueValues': is not a member of 'Statistics'
+  (compiling source file '/UnitTest-2-2.cpp')
+      C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(10,7):
+      see declaration of 'Statistics'
+  
+C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-2\UnitTest-2-2.cpp(103,42): error C2039: 'standardDeviation': is not a member of 'Statistics'
+  (compiling source file '/UnitTest-2-2.cpp')
+      C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(10,7):
+      see declaration of 'Statistics'
+  
+C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-2\UnitTest-2-2.cpp(103,42): error C2039: '__this': is not a member of 'Statistics'
+  (compiling source file '/UnitTest-2-2.cpp')
+      C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(10,7):
+      see declaration of 'Statistics'
+  
+C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-2\UnitTest-2-2.cpp(115,21): error C2039: 'uniqueValues': is not a member of 'Statistics'
+  (compiling source file '/UnitTest-2-2.cpp')
+      C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(10,7):
+      see declaration of 'Statistics'
+  
+C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-2\UnitTest-2-2.cpp(115,21): error C2039: '__this': is not a member of 'Statistics'
+  (compiling source file '/UnitTest-2-2.cpp')
+      C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(10,7):
+      see declaration of 'Statistics'
+  
+C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-2\UnitTest-2-2.cpp(128,42): error C2039: 'stripOutliers': is not a member of 'Statistics'
+  (compiling source file '/UnitTest-2-2.cpp')
+      C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(10,7):
+      see declaration of 'Statistics'
+  
+C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-2\UnitTest-2-2.cpp(128,42): error C2039: '__this': is not a member of 'Statistics'
+  (compiling source file '/UnitTest-2-2.cpp')
+      C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(10,7):
+      see declaration of 'Statistics'
+  
+C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-2\UnitTest-2-2.cpp(141,42): error C2039: 'stripOutliers': is not a member of 'Statistics'
+  (compiling source file '/UnitTest-2-2.cpp')
+      C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(10,7):
+      see declaration of 'Statistics'
+  
+C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\UnitTest-2-2\UnitTest-2-2.cpp(141,42): error C2039: '__this': is not a member of 'Statistics'
+  (compiling source file '/UnitTest-2-2.cpp')
+      C:\Users\samar\Downloads\OOP-SA1-2025-Blank\OOP-SA1-2025\OOP-SA1-2021\statistics.hpp(10,7):
+      see declaration of 'Statistics'
+  
