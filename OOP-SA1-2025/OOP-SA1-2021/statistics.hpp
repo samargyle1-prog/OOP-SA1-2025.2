@@ -68,21 +68,47 @@ public:
 						{ 453.879,		453.879 }
 						{ 5555.9999,	5555.9999 }
 
-		*/
+	*/
 	
-};
+	};
 }
 /* write your method implementations here!*/
-	//3rd
-	// implement the method to return the sum of the values
+//3rd
+// implement the method to return the sum of the values
 long double sum(const std::vector<long double>& data) {
 	if (this->s.sum == 0)
 		return 0.0;
 
-	double totalValue = this->s.sum;
-	for (std::size_t i = 1; i < this->s.sum; ++i)
+	double totalValue = long double result;
+	for (std::size_t i = 1; i < long double result; ++i)
 	{
-		totalValue = accumulate(this->s.sum.begin(), this->s.sum.end());
+		totalValue = accumulate(long double result.begin(), long double result.end());
 	}
 	return totalValue;
 }
+/*
+// implement the method to return the mean of the values
+long double mean(const std::vector<long double>& data) {
+	if (this->s.mean == 0)
+    return 0.0;
+ 
+    double meanValue = this->s.mean[0];
+    for (std::size_t i = 1; i < this->s.mean; ++i)
+    {
+        int totalValue = accumulate(this->s.mean.begin(),this->s.mean.end());
+        meanValue = totalValue / i;        
+    }
+    return meanValue;
+}
+
+// implement the method to return the min of the values
+	double min(const std::vector<long double>& data) {
+		if (data.empty()) return 0;
+		return *std::min_element(data.begin(), data.end());
+}
+	// implement the method to return the max of the values
+double max(const std::vector<long double>& data) {
+		if (data.empty()) return 0;
+		return *std::max_element(data.begin(), data.end());
+}
+*/
