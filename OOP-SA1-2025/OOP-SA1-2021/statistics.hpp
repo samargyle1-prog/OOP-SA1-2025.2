@@ -28,31 +28,13 @@ public:
 	long double sum(std::vector<double> const& v);
 
 	// implement the method to return the mean of the values
-	long double mean(std::vector<double> const& v);
+	long double mean(std::vector<double> const& v) { return 0.0; }
 
 	// implement the method to return the min of the values
-	double min(std::vector<double> const& v);
+	double min(std::vector<double> const& v) { return 0.0; }
 
 	// implement the method to return the max of the values
-	double max(std::vector<double> const& v);
-
-	//2.2
-
-
-	// 2.1
-	// implement the method to return the subtotals map
-	std::map<double, long double> subTotals(const std::vector<double>& data);
-
-	// implement the method to return the frequency map
-	std::map<double, long double> frequency(const std::vector<double>& data);
-
-	// implement the method to return the mode map
-	std::map<double, long double> mode(const std::vector<double>& data);
-
-	// implement the method to return the median value
-	std::map<double, long double> median(const std::vector<double>& data);
-
-	//1st 
+	double max(std::vector<double> const& v) { return 0.0; }
 
 
 	/*
@@ -87,47 +69,20 @@ public:
 						{ 5555.9999,	5555.9999 }
 
 		*/
-		/* write your method implementations here!*/
-		//3rd
-		// implement the method to return the sum of the values
-	long double sum(const std::vector<long double>& data) {
-		long double total = 0;
-		for (auto v : data) total += v;
-		return total;
-	}
-
-	// implement the method to return the mean of the values
-	long double mean(const std::vector<long double>& data) {
-		if (data.empty()) return 0;
-		return sum(data) / data.size();
-	}
-	// implement the method to return the min of the values
-	double min(const std::vector<long double>& data) {
-		if (data.empty()) return 0;
-		return *std::min_element(data.begin(), data.end());
-	}
-	// implement the method to return the max of the values
-	double max(const std::vector<long double>& data) {
-		if (data.empty()) return 0;
-		return *std::max_element(data.begin(), data.end());
-	}
-
-	//2.1
-	// implement the method to return the subtotals map
-	std::map<double, long double> Statistics::subTotals(const std::vector<double>& data) {
-		std::map<double, long double> result;
-		for (const auto& value : data) {
-			result[value] += value;
-		}
-		return result;
-	}
-	// implement the method to return the frequency map
-	std::map<double, long double> Statistics::frequency(const std::vector<double>& data) {
-		std::map<double, long double> freqMap;
-		for (const auto& value : data) {
-			++freqMap[value];
-		}
-		return freqMap;
-	}
+	
 };
+}
+/* write your method implementations here!*/
+	//3rd
+	// implement the method to return the sum of the values
+long double sum(const std::vector<long double>& data) {
+	if (this->s.sum == 0)
+		return 0.0;
+
+	double totalValue = this->s.sum;
+	for (std::size_t i = 1; i < this->s.sum; ++i)
+	{
+		totalValue = accumulate(this->s.sum.begin(), this->s.sum.end());
+	}
+	return totalValue;
 }
