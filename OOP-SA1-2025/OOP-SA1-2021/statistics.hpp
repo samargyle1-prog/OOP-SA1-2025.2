@@ -24,18 +24,13 @@ public:
 	*/
 
 	/* 3rd */
-	// implement the method to return the sum of the values
-	long double sum(std::vector<double> const& v);
-
-	// implement the method to return the mean of the values
+	long double sum(std::vector<double> const& v){
+			long double totalValue = std::accumulate(v.begin(), v.end(), 0.0L);
+			return totalValue;
+		}
 	long double mean(std::vector<double> const& v) { return 0.0; }
-
-	// implement the method to return the min of the values
 	double min(std::vector<double> const& v) { return 0.0; }
-
-	// implement the method to return the max of the values
 	double max(std::vector<double> const& v) { return 0.0; }
-
 
 	/*
 			Test data used is as follows { 2.6, 5555.9999, 12.0, 90.0, 90.0, 40, 11, 453.879, 12, 12, 90, 8 }
@@ -68,24 +63,14 @@ public:
 						{ 453.879,		453.879 }
 						{ 5555.9999,	5555.9999 }
 
-	*/
-	
-	};
-}
-/* write your method implementations here!*/
-//3rd
-// implement the method to return the sum of the values
-long double sum(const std::vector<long double>& data) {
-	if (this->s.sum == 0)
-		return 0.0;
+		*/
+		
 
-	double totalValue = long double result;
-	for (std::size_t i = 1; i < long double result; ++i)
-	{
-		totalValue = accumulate(long double result.begin(), long double result.end());
-	}
-	return totalValue;
-}
+};
+/* write your method implementations here!*/
+	//3rd
+	// implement the method to return the sum of the values
+
 /*
 // implement the method to return the mean of the values
 long double mean(const std::vector<long double>& data) {
