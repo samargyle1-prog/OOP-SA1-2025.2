@@ -24,10 +24,10 @@ public:
 	*/
 
 	/* 3rd */
-	long double sum(std::vector<double> const& v){
-			long double totalValue = std::accumulate(v.begin(), v.end(), 0.0L);
-			return totalValue;
-		}
+	long double sum(std::vector<double> const& v) {
+		long double totalValue = std::accumulate(v.begin(), v.end(), 0.0L);
+		return totalValue;
+	}
 	long double mean(std::vector<double> const& v) { return 0.0; }
 	double min(std::vector<double> const& v) { return 0.0; }
 	double max(std::vector<double> const& v) { return 0.0; }
@@ -67,33 +67,63 @@ public:
 		
 
 };
-/* write your method implementations here!*/
-	//3rd
-	// implement the method to return the sum of the values
-
-/*
+/* write your method implementations here!
+// implement the method to return the sum of the values
+long double sum(std::vector<double> const& v) {
+	long double totalValue = std::accumulate(v.begin(), v.end(), 0.0L);
+	return totalValue;
+}
 // implement the method to return the mean of the values
-long double mean(const std::vector<long double>& data) {
-	if (this->s.mean == 0)
-    return 0.0;
- 
-    double meanValue = this->s.mean[0];
-    for (std::size_t i = 1; i < this->s.mean; ++i)
-    {
-        int totalValue = accumulate(this->s.mean.begin(),this->s.mean.end());
-        meanValue = totalValue / i;        
-    }
+long double mean(std::vector<double> const& v) {
+	long double totalValue = std::accumulate(v.begin(), v.end(), 0.0L);
+	long double meanValue = totalValue / v.size();
     return meanValue;
 }
 
 // implement the method to return the min of the values
-	double min(const std::vector<long double>& data) {
-		if (data.empty()) return 0;
-		return *std::min_element(data.begin(), data.end());
+double min(std::vector<double> const& v) {
+	double minValue = std::min_element(v.begin(), v.end());
+	return minValue;
 }
-	// implement the method to return the max of the values
-double max(const std::vector<long double>& data) {
-		if (data.empty()) return 0;
-		return *std::max_element(data.begin(), data.end());
+// implement the method to return the max of the values
+double max(std::vector<double> const& v) {
+	double maxValue = std::max_element(v.begin(), v.end());
+	return maxValue;
+}
+
+//2.2
+// implement the method to return the standard deviation of the values
+long double SDeviation(std::vector<double> const& v) {
+	long double totalValue = std::accumulate(v.begin(), v.end(), 0.0L);
+	long double meanValue = totalValue / v.size();
+	long double std.Dev = 0.0;
+	return std.Dev;
+}
+// implement the method to return the unique values from the vector
+void UniqueValues(std::vector<double> const& v) {
+	std::sort(v.begin(), v.end());
+	auto last = std::unique(v.begin(), v.end());
+	v.erase(last, v.end());
+}
+// implement the method to return the number of outliers from the vector
+void Outliers(std::vector<double> const& v) {
+	double outlierCount = 0;
+	return outlierCount;
+}
+//2.1
+// implement the method to return the mode values from the vector
+std::vector<double> Mode(std::vector<double> const& v) {
+	std::vector<double> modeValues;
+	return modeValues;
+}
+// implement the method to return the frequency map from the vector
+std::map<double, long> Frequency(std::vector<double> const& v) {
+	std::map<double, long> freqMap;
+	return freqMap;
+}
+// implement the method to return the median value from the vector
+double Median(std::vector<double> const& v) {
+	double medianValue = 0.0;
+	return medianValue;
 }
 */
