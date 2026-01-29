@@ -24,14 +24,33 @@ public:
 	*/
 
 	/* 3rd */
+	//!!! remove me and implement the methods below the class definition !!!
 	long double sum(std::vector<double> const& v) {
 		long double totalValue = std::accumulate(v.begin(), v.end(), 0.0L);
 		return totalValue;
 	}
-	long double mean(std::vector<double> const& v) { return 0.0; }
-	double min(std::vector<double> const& v) { return 0.0; }
-	double max(std::vector<double> const& v) { return 0.0; }
-
+	long double mean(std::vector<double> const& v) {
+		long double totalValue = std::accumulate(v.begin(), v.end(), 0.0L);
+		long double meanValue = totalValue / v.size();
+		return meanValue;
+	}
+	double min(std::vector<double> const& v) {
+		auto minValue = std::min_element(v.begin(), v.end());
+		return *minValue;
+	}
+	double max(std::vector<double> const& v) {
+		auto maxValue = std::max_element(v.begin(), v.end());
+		return *maxValue;
+	}
+	//2.2
+	long double standardDeviation(std::vector<double> const& v) { return 0.0; }
+	double uniqueValues(std::vector<double> const& v) { return 0.0; }
+	double stripOutliers(std::vector<double> const& v, double) { return 0.0; }
+	//2.1
+	double mode(std::vector<double> const& v) { return 0.0; }
+	double median(std::vector<double> const& v) { return 0.0; }
+	long double frequency(std::vector<double> const& v) { return 0.0; }
+	long double subTotals(std::vector<double> const& v) { return 0.0; }
 	/*
 			Test data used is as follows { 2.6, 5555.9999, 12.0, 90.0, 90.0, 40, 11, 453.879, 12, 12, 90, 8 }
 
@@ -67,12 +86,14 @@ public:
 		
 
 };
+
 /* write your method implementations here!
 // implement the method to return the sum of the values
 long double sum(std::vector<double> const& v) {
 	long double totalValue = std::accumulate(v.begin(), v.end(), 0.0L);
 	return totalValue;
 }
+/*
 // implement the method to return the mean of the values
 long double mean(std::vector<double> const& v) {
 	long double totalValue = std::accumulate(v.begin(), v.end(), 0.0L);
@@ -82,13 +103,13 @@ long double mean(std::vector<double> const& v) {
 
 // implement the method to return the min of the values
 double min(std::vector<double> const& v) {
-	double minValue = std::min_element(v.begin(), v.end());
-	return minValue;
+	auto minValue = std::min_element(v.begin(), v.end());
+	return *minValue;
 }
 // implement the method to return the max of the values
 double max(std::vector<double> const& v) {
-	double maxValue = std::max_element(v.begin(), v.end());
-	return maxValue;
+	auto maxValue = std::max_element(v.begin(), v.end());
+	return *maxValue;
 }
 
 //2.2
