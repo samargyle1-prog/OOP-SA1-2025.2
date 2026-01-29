@@ -6,6 +6,8 @@
 #include <string>
 #include "math.h"
 #include <numeric>
+#include <iostream>
+#include <stdexcept>
 
 class Statistics
 {
@@ -24,14 +26,13 @@ public:
 	*/
 
 	/* 3rd */
-	//!!! remove methods and implement the methods below the class definition !!!
 	long double sum(std::vector<double> const& v);
 	long double mean(std::vector<double> const& v);
 	double min(std::vector<double> const& v);
 	double max(std::vector<double> const& v);
 	//2.2
-	long double standardDeviation(std::vector<double> const& v) { return 0.0; }
-	double uniqueValues(std::vector<double> const& v) { return 0.0; }
+	long double standardDeviation(std::vector<double> const& v);
+	double uniqueValues(std::vector<double> const& v);
 	double stripOutliers(std::vector<double> const& v, double) { return 0.0; }
 	//2.1
 	double mode(std::vector<double> const& v) { return 0.0; }
@@ -75,12 +76,12 @@ public:
 };
 
 /* write your method implementations here!*/
+//3rd
 // implement the method to return the sum of the values
 long double Statistics::sum(std::vector<double> const& v) {
 	long double totalValue = std::accumulate(v.begin(), v.end(), 0.0L);
 	return totalValue;
 }
-
 // implement the method to return the mean of the values
 long double Statistics::mean(std::vector<double> const& v) {
 	long double totalValue = std::accumulate(v.begin(), v.end(), 0.0L);
@@ -98,46 +99,52 @@ double Statistics::max(std::vector<double> const& v) {
 	auto maxValue = std::max_element(v.begin(), v.end());
 	return *maxValue;
 }
-/*
+
 //2.2
 // implement the method to return the standard deviation of the values
-long double Statistics::standardDeviation(std::vector<double> const& v)(std::vector<double> const& v) {
-	long double totalValue = std::accumulate(v.begin(), v.end(), 0.0L);
-	long double meanValue = totalValue / v.size();
-	long double std.Dev = 0.0;
-	return std.Dev;
+long double Statistics::standardDeviation(std::vector<double> const& v) {
+	double sum = 0.0, mean, standardDeviation = 0.0;
+	int size = v.size();
+	for (int i = 0; i < size; ++i) {
+		sum += v[i];
+	}
+	mean = sum / size;
+	for (int i = 0; i < size; ++i) {
+		standardDeviation += pow(v[i] - mean, 2);
+	}
+	return sqrt(standardDeviation / size);
 }
+
 // implement the method to return the unique values from the vector
 double Statistics::uniqueValues(std::vector<double> const& v) {
-	std::sort(v.begin(), v.end());
-	auto last = std::unique(v.begin(), v.end());
-	v.erase(last, v.end());
+	sort(v.begin(), v.end());
+	auto it = unique(v.begin(), v.end());
+	v.erase(it, v.end());
+	for (auto i : v)
+		cout << i << " ";
+	return 0;
 }
+/*
 // implement the method to return the number of outliers from the vector
-double Statistics::stripOutliers(std::vector<double> const& v, double) {
+double Statistics::stripOutliers(std::vector<double> const& v, double)  {
 	double outlierCount = 0;
 	return outlierCount;
 }
 
 //2.1
 // implement the method to return the mode values from the vector
-double Statistics::mode(std::vector<double> const& v) {
+std::vector<double> Mode(std::vector<double> const& v) {
 	std::vector<double> modeValues;
 	return modeValues;
 }
+// implement the method to return the frequency map from the vector
+std::map<double, long> Frequency(std::vector<double> const& v) {
+	std::map<double, long> freqMap;
+	return freqMap;
+}
 // implement the method to return the median value from the vector
-double Statistics::median(std::vector<double> const& v) {
+double Median(std::vector<double> const& v) {
 	double medianValue = 0.0;
 	return medianValue;
-}
-// implement the method to return the frequency map from the vector
-long double frequency(std::vector<double> const& v) {
-	std::map<double, long> freqMap;
-	return freqMap;
-}
-// implement the method to return the subTotals map from the vector
-long double subTotals(std::vector<double> const& v) {
-	std::map<double, long> freqMap;
-	return freqMap;
 }
 */
